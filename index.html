@@ -3,11 +3,15 @@ layout: default
 title: Pranav Masariya
 ---
 
-<div id="home">
+<div class="content">
+<div class="related">
   
-  <ul class="posts">
+  <ul>
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li>
+	  <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+	  </li>
     {% endfor %}
   </ul>
+</div>
 </div>
